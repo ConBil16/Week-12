@@ -36,7 +36,25 @@ def ScoreFinder(players, scores, name):
     else:
         print('OUTPUT player not found')
 
+
 def Union(scores, player2):
     combination = scores + player2
-    print(combination)
-    #return combination
+    return combination
+    #Should I print this here or have the user put in the print function
+
+def Intersection(x, y):
+    inner = set(x)&set(y)
+    return inner
+
+def NotIn(list_1, list_2):
+    empty = []
+    for i in list_1:
+        if i not in list_2:
+            empty.append(i)
+    return empty 
+    
+
+
+        
+        
+
